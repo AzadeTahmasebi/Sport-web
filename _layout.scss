@@ -1,0 +1,657 @@
+//All sports link:
+section.sportsLink {
+    position: relative;
+
+    .sport-card {
+        height: 500px;
+        @include flexlayout(space-between);
+        margin-top: 50px;
+
+        .card {
+            width: 100%;
+            border: none !important;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+
+
+            .card-img {
+                width: 100%;
+                cursor: pointer;
+                border-bottom: 7px solid $color-fifth;
+                transition: .5s;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    display: block;
+                    transition: .5s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: .5s;
+
+                    }
+                }
+
+                .sport-info {
+                    width: 100%;
+                    background-color: rgba($color-dark, .6);
+                    text-align: center;
+                    padding: 10px 0;
+
+                    .card-title {
+                        width: 100%;
+                        @include fontChanger(18px);
+                        color: $color-light;
+                    }
+
+                    .sport-btn {
+                        border: none;
+                        @include fontChanger(14px);
+                        background-color: transparent;
+                        color: $color-light;
+                        text-align: center;
+                        transition: .5s;
+
+                        &:hover {
+                            color: $color-fifth;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right-btn {
+        @include positionChanger(50%, -15%);
+    }
+
+    .left-btn {
+        @include positionChanger(50%, 80%);
+    }
+}
+
+// Football news-card:
+section.newsCard {
+    padding-bottom: 150px;
+
+    .newsCard-row {
+        @include flexlayout(space-between);
+        margin: 50px auto 0;
+        text-align: center;
+
+        .card {
+            width: 100%;
+            background-color: $color-secondary;
+            border: none !important;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            margin: 10px 0;
+
+
+            .card-img {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                transition: .5s;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+
+                .card-title {
+                    width: 100%;
+                    text-align: center;
+                    @include fontChanger(15px);
+                    color: $color-light;
+                    background-color: rgba($color-dark, .6);
+                    padding: 20px;
+                }
+            }
+
+            .cardInfo {
+                width: 100%;
+                height: 100%;
+                color: $color-light;
+                border-bottom: 10px solid $color-fifth;
+                padding: 30px 20px;
+                @include positionChanger(0, 0);
+                transform: translateY(550px);
+                transition: .5s;
+
+                span {
+                    @include fontChanger(13px);
+                    margin: 20px 0;
+                    display: block;
+                }
+
+                .text {
+                    @include fontChanger(14px);
+                    padding-bottom: 20px;
+                }
+
+                .cardInfo-link {
+                    transition: .5s;
+                    color: $color-fifth;
+
+
+                    h3 {
+                        @include fontChanger(20px);
+                    }
+
+                    &:hover {
+                        color: $color-fifth;
+                        transition: .5s;
+                    }
+                }
+            }
+
+            &:hover {
+                .card-img {
+                    transform: translateX(-450px);
+                }
+
+                .cardInfo {
+                    transform: translateY(0);
+                }
+            }
+
+            .card-link {
+                text-align: center;
+                margin: auto;
+            }
+        }
+    }
+}
+
+// last news:
+section.lastNews {
+    width: 100%;
+    height: 600px;
+    background-image: url(img/bg6.jpg);
+    background-size: cover;
+
+    .lastNews-row {
+        @include flexlayout (space-between);
+        position: relative;
+
+        .player {
+            width: 50%;
+
+            .player-img {
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+
+        .ball-img {
+            width: 10%;
+            @include positionChanger(15%, 44%);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .lastNews-info {
+            padding: 30px 10px 50px;
+            text-align: center;
+            margin: auto;
+
+            .links {
+                padding: 5px;
+            }
+
+            .lastNews-link {
+                @include fontChanger(12px);
+                color: $color-dark;
+                margin: 0 20px 5px;
+                padding-bottom: 10px;
+                border-bottom: 3px solid lightgray;
+
+
+                &:hover {
+                    color: $color-primary  !important;
+                    border-bottom: 3px solid $color-primary;
+                }
+            }
+
+            .lastNews-items {
+                text-align: right !important;
+                color: $color-dark  !important;
+                padding-right: 20px;
+
+                ul {
+                    padding-right: 0;
+                    padding-bottom: 30px;
+
+                    .liStyle {
+                        list-style-type: none;
+                        padding: 10px 0;
+                        transition: .5s;
+
+                        a {
+                            @include fontChanger(14px);
+                            color: $color-dark ;
+                            transition: .5s;
+
+                            &:hover {
+                                color: $color-primary;
+                                transition: .5s;
+                            }
+                        }
+                    }
+
+                    .listIcon {
+                        @include fontChanger(5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Iranian league:
+section.iranianLeauge {
+    background-image: url(img/bg5.jpg);
+    background-size: cover;
+    height: 1400px;
+    width: 100%;
+    padding-top: 60px;
+    position: relative;
+
+    .teams-ranking {
+        width: 90%;
+        height: 500px;
+        background-image: url(img/bg-box.jpg);
+        background-size: cover;
+        text-align: center;
+        margin: 40px auto 0;
+        @include positionChanger(85%, 5%);
+        z-index: 100;
+    }
+}
+
+//best-players (scorers & passers):
+section.best-players {
+    background-image: url(img/bg-blog4.jpg);
+    background-size: cover;
+    height: 800px;
+
+    .heading-space {
+        margin-top: 300px;
+    }
+
+    .best-players-row {
+        position: relative;
+
+        .best-scorers {
+            @include positionChanger(-5%, 5%);
+            color: $color-dark;
+        }
+
+        .best-passers {
+            @include positionChanger(50%, 5%);
+            color: $color-dark;
+        }
+    }
+
+    .main-row {
+        height: 40vh;
+        display: flex;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 60px;
+        position: relative;
+
+        .player-img {
+            flex: 1;
+            height: 100%;
+            cursor: pointer;
+            transition: .5s;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                flex: 4;
+            }
+
+            .player-info {
+                width: 100%;
+                height: 40vh;
+                @include positionChanger(0, -190%);
+                background-color: rgba($color-secondary, .6);
+                color: $color-light;
+                padding: 30px;
+                text-align: center;
+                transition: 0.5s;
+
+                .player-name {
+                    @include fontChanger(14px);
+                }
+
+                .team-info {
+                    @include fontChanger(11px);
+                    padding: 5px 0;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    @include fontChanger(12px);
+                }
+            }
+
+            &:hover .player-info {
+                @include positionChanger(0, 0);
+            }
+
+            .player-ranking {
+                @include positionChanger(82%, 0);
+                @include fontChanger (30px);
+                background-color: rgba($color-dark, .4);
+                color: $color-light;
+                padding: 0 12px;
+                transition: .5s;
+            }
+
+            &:hover .player-ranking {
+                background-color: transparent;
+                color: $color-fifth;
+                transition: .5s;
+            }
+        }
+
+        .first-player {
+            background-image: url(img/player4.jpg);
+        }
+
+        .second-player {
+            background-image: url(img/player3.jpg);
+        }
+
+        .third-player {
+            background-image: url(img/player2.jpg);
+        }
+
+        .fourth-player {
+            background-image: url(img/player1.jpg);
+        }
+
+        .fifth-player {
+            background-image: url(img/player8.jpg);
+        }
+
+        .sixth-player {
+            background-image: url(img/player7.jpg);
+        }
+
+        .seventh-player {
+            background-image: url(img/player6.jpg);
+        }
+
+        .eighth-player {
+            background-image: url(img/player5.jpg);
+        }
+    }
+}
+
+//foreign leauges:
+section.foreign-leagues {
+    background-image: url(img/bg-sh-hp2.jpg);
+    background-size: cover;
+    height: 1300px;
+    padding-top: 60px;
+}
+
+//world cup table:
+section.world-cup {
+    position: relative;
+    overflow: hidden;
+
+    .worldCup-row {
+        @include flexlayout(space-between);
+        overflow: hidden;
+        margin-top: 50px;
+
+        .world-cup-table {
+            width: 100%;
+
+            .table-title {
+                background-color: $color-secondary;
+                color: $color-light;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .btn-style {
+                color: $color-dark;
+                @include fontChanger(20px);
+                font-weight: 900;
+
+                &:hover {
+                    background-color: $color-secondary;
+                    color: $color-fifth;
+                }
+            }
+
+            .body-cover {
+                background: linear-gradient(rgba(black, .9), rgba(black, .7)), url(img/football-n-trophy.jpg) center no-repeat;
+                background-size: cover;
+
+                tr {
+                    @include fontChanger(10px);
+
+                    td {
+                        color: $color-light;
+                    }
+                }
+            }
+
+            .borderStyle {
+                border-bottom: none !important;
+            }
+        }
+
+        .imgStyle {
+            width: 45%;
+            @include positionChanger(50%, 55%);
+        }
+
+        .ballStyle {
+            width: 9%;
+            @include positionChanger(40%, 49%);
+        }
+    }
+}
+
+//section.videos:
+section.videos {
+    background-image: url(img/bg-4.jpg);
+    background-size: cover;
+    height: 1000px;
+    margin-top: 50px;
+    position: relative;
+
+    .play-video {
+        width: 90%;
+        filter: brightness(.8);
+        margin: 50px auto 0;
+        text-align: center;
+        padding: 50px;
+
+        .h_iframe-aparat_embed_frame {
+            position: relative;
+        }
+
+        .h_iframe-aparat_embed_frame .ratio {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .h_iframe-aparat_embed_frame iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .more-videos {
+        margin-top: 80px;
+
+        .video-row {
+            @include flexlayout(space-between);
+            border-bottom: 1px solid rgb(116, 115, 115);
+            width: 70%;
+            margin: 5px auto 0;
+            text-align: center;
+            padding: 5px 0;
+
+            .video-info {
+                width: 65%;
+                padding-top: 5px;
+
+                .title {
+                    &:hover {
+                        color: $color-fifth;
+                        transition: .5s;
+                        cursor: pointer;
+                    }
+                }
+
+                .text {
+                    color: $color-light;
+                    @include fontChanger(12px);
+                    text-align: left;
+                }
+
+                span {
+                    color: $color-fourth;
+                    cursor: pointer;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $color-fifth;
+                        transition: .5s;
+                    }
+                }
+            }
+
+            .video-img {
+                width: 30%;
+                margin-bottom: 10px;
+                filter: brightness(.8);
+                cursor: pointer;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    transition: .5s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: .5s;
+                    }
+                }
+
+                .play-icon {
+                    border: 2px solid $color-light;
+                    border-radius: 50%;
+                    padding: 10px;
+
+                }
+            }
+        }
+    }
+}
+
+//volleyball-news:
+section.volleyball-news {
+    background-image: url(img/bg-blog5.jpg);
+    background-size: cover;
+
+    .volleyball-row {
+        @include flexlayout(space-between);
+        margin: 50px auto 0;
+        padding-bottom: 10px;
+
+        .volleyballCard {
+            width: 100%;
+            height: 500px;
+            background-color: $color-light;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .4s;
+            margin-bottom: 40px;
+            border: 1px solid lightgray;
+
+            .volleyball-img {
+                overflow: hidden;
+
+                .imgStyle {
+                    width: 100%;
+                    transition: .5s;
+                    cursor: pointer;
+                    display: block;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        filter: brightness(.6);
+                        transition: .5s;
+                    }
+                }
+            }
+
+            .valleyball-info {
+                padding: 20px;
+                border-bottom: 1px solid transparent;
+                border-radius: 5px;
+
+                .titleStyle {
+                    @include fontChanger(20px);
+                    font-weight: 700;
+                    transition: .5s;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        color: $color-primary;
+                        transition: .5s
+                    }
+                }
+
+                span {
+                    @include fontChanger(14px);
+                    color: gray;
+                }
+
+                .text {
+                    @include fontChanger(15px);
+                    margin-top: 15px;
+                }
+            }
+
+            .link {
+                text-align: center;
+                margin: 5px auto 0;
+            }
+
+            &:hover {
+                box-shadow: 0 20px 40px rgb(36 38 53 / 20%);
+                transform: translateY(-20px);
+                transition: .4s;
+            }
+        }
+    }
+}

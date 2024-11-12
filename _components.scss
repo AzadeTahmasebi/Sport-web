@@ -1,0 +1,465 @@
+.container-size {
+    width: 90%;
+    margin: auto;
+}
+
+.mark-item {
+    color: $color-fourth  !important;
+}
+
+.second-mark-item {
+    color: $color-fifth  !important;
+}
+
+.third-mark-item {
+    color: $color-secondary  !important;
+}
+
+.mark-line {
+    border-bottom: 3px solid $color-primary  !important;
+}
+
+.main-heading {
+    text-align: center;
+    @include fontChanger(20px);
+    font-weight: 900;
+    padding: 80px 0;
+    position: relative;
+
+    span {
+        @include fontChanger(30px);
+        font-weight: 900;
+    }
+
+    &::after {
+        content: "";
+        width: 50%;
+        height: 3px;
+        background-color: $color-fifth;
+        border-radius: 50%;
+        @include positionChanger(70%, 0%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.colorful-border {
+    border: 4px solid;
+    border-image: linear-gradient($color-secondary, $color-third, $color-fifth) 1;
+    animation: rotate 4s infinite;
+
+    @keyframes rotate {
+        50% {
+            border-image: linear-gradient(360deg, $color-secondary, $color-third, $color-fifth) 1;
+        }
+    }
+}
+
+.main-btn {
+    width: 150px;
+    height: 40px;
+    color: $color-light;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+    outline: none;
+    border: none;
+    overflow: hidden;
+
+    span {
+        @include fontChanger(14px);
+        @include positionChanger(25%, 21%);
+        z-index: 3;
+    }
+
+    &:hover {
+        background: transparent;
+        box-shadow: 0px 1px 9px 1px $color-primary;
+    }
+
+    &::after {
+        content: " ";
+        @include positionChanger(0, 0);
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1fd1f9;
+        background-image: linear-gradient(315deg, $color-secondary 0%, $color-primary 30%, $color-fourth 98%);
+        transition: .5s;
+    }
+
+    &:hover::after {
+        transform: scale(2) rotate(180deg);
+        transition: .5s
+    }
+}
+
+.btn-card {
+    @include fontChanger(16px);
+    font-weight: 900px;
+    width: 150px;
+    height: 40px;
+    color: $color-light;
+    border: 1px solid $color-light;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: .5s;
+
+    &:hover {
+        background-image: linear-gradient(315deg, $color-secondary 0%, $color-primary 30%, $color-fourth 98%);
+        border: none;
+        transition: .5s;
+    }
+}
+
+#btn-card {
+    width: 100%;
+    height: 50px !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: $color-secondary;
+    transition: .5s;
+
+    &:hover::after {
+        transform: none;
+        box-shadow: none;
+        background-image: linear-gradient(315deg, $color-fifth 0%, $color-third 30%, $color-secondary 98%);
+        transition: .5s
+    }
+
+    .different-space {
+        span {
+            @include positionChanger(25%, 100%);
+            padding-right: 200px;
+        }
+    }
+}
+
+//sports link & football:
+
+.newsCard-row {
+    @include flexlayout(space-between);
+    margin-top: 50px;
+
+    .card {
+        width: 32%;
+        border: none !important;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            transition: .5s;
+            position: relative;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+
+            .card-title {
+                width: 100%;
+                text-align: center;
+                @include fontChanger(15px);
+                color: $color-light;
+                background-color: rgba($color-dark, .6);
+                padding: 20px;
+            }
+        }
+    }
+}
+
+//game-schedule-table:
+.leauge-row {
+    @include flexlayout(space-between);
+
+    .table-title {
+        color: $color-light;
+        background-color: $color-secondary;
+        padding: 15px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .game-schedule-table {
+        width: 100%;
+
+
+        .dropdown-row {
+            width: 100%;
+            @include flexlayout(space-between);
+            background-color: $color-light;
+            margin: 0 !important;
+            padding: 20px 0;
+            border-bottom: 1px solid rgb(238, 236, 236);
+
+            .dropdown-btn {
+                padding: 8px 20px;
+                border-radius: 10px;
+                border: none;
+                margin: 0 16px;
+                background-color: inherit;
+                box-shadow: inset 20px 20px 20px -27px $color-base;
+            }
+        }
+
+        .game-schedule-item {
+            background-color: $color-light;
+            border-bottom: 1px solid lightgray;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(240, 235, 235);
+                transition: .5s
+            }
+
+            .teams {
+                @include flexlayout(space-evenly);
+                padding: 20px 0;
+
+                h5 {
+                    @include fontChanger(14px);
+                    font-weight: 900;
+                    padding-top: 5px;
+                }
+
+                img {
+                    width: 8%;
+                }
+
+                .game-result {
+                    margin: 0 5px;
+
+                    h6 {
+                        color: $color-primary;
+                        @include fontChanger(25px);
+                        font-weight: 900;
+                        letter-spacing: 10px;
+                    }
+                }
+
+                .game-time {
+                    width: 100%;
+                    text-align: center;
+                    margin: auto;
+
+                    p {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    //game-teams-table:
+    .game-teams-table {
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+
+        .teams-img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .game-teams-info {
+            width: 100%;
+            @include positionChanger (20%, 0);
+
+            .game-teams-text {
+                @include flexlayout(space-evenly);
+
+                .team-logo {
+                    width: 8%;
+                }
+
+                .team-name {
+                    padding-top: 15px;
+                    color: $color-light;
+                }
+            }
+
+            .game-time {
+                width: 100%;
+                @include fontChanger(11px);
+                color: $color-light;
+                text-align: center;
+                padding-top: 20px;
+            }
+        }
+
+        .next-schedule {
+            margin-bottom: 0;
+
+            tr {
+                @include fontChanger(14px);
+                height: 56px;
+                background-color: $color-light;
+                border-bottom: 1px solid lightgray;
+
+                .team-logo {
+                    width: 10%;
+                }
+            }
+        }
+    }
+}
+
+//scroll top:
+.scroll-top {
+    width: 40px;
+    height: 40px;
+    color: rgb(156, 155, 155);
+    border: 1px solid rgb(156, 155, 155);
+    position: relative;
+    @include positionChanger(95%, 1%);
+    transition: .5s;
+
+    &:hover {
+        border: 1px solid $color-fourth;
+        transition: .5s;
+    }
+
+    i {
+        font-size: 22px;
+        @include positionChanger(25%, 32%);
+        transition: .3s;
+
+        &:hover {
+            top: 7px;
+            color: $color-fourth;
+        }
+    }
+}
+
+
+//---------Responsive------------
+@media screen and (min-width:500px) {
+
+    .main-heading {
+        @include fontChanger(30px);
+
+        span {
+            @include fontChanger(50px);
+        }
+
+        &::after {
+            content: "";
+            width: 45%;
+            @include positionChanger(70%, 5%);
+        }
+    }
+}
+
+@media screen and (min-width:560px) {
+    .leauge-row {
+        .game-schedule-table {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .game-time {
+            font-size: 14px !important;
+        }
+
+    }
+}
+
+@media screen and (min-width:720px) {
+    .leauge-row {
+        .game-schedule-table {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    .main-heading {
+        @include fontChanger(30px);
+
+        &::after {
+            width: 30%;
+            @include positionChanger(70%, 20%);
+        }
+    }
+
+    .btn-card {
+        @include fontChanger(12px);
+        font-weight: 900px;
+        width: 110px;
+        height: 28px;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .btn-card {
+        font-size: 16px !important;
+        width: 150px;
+        height: 40px;
+    }
+
+    .leauge-row {
+        .game-schedule-table {
+            width: 40%;
+            margin: 0;
+        }
+
+        .game-teams-table {
+            width: 58%;
+            margin: 0;
+
+            tr {
+                font-size: 16px !important;
+                height: 72.5px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1150px) {
+
+    .main-btn {
+        width: 180px;
+        height: 50px;
+
+        span {
+            @include fontChanger(16px);
+        }
+    }
+
+    .leauge-row {
+        .game-teams-table {
+            tr {
+                height: 64px !important;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .leauge-row {
+        .game-teams-table {
+            tr {
+                height: 58px !important;
+
+            }
+        }
+
+        .game-schedule-table {
+            width: 35%;
+        }
+    }
+}

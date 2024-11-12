@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fa-Ir" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ورزش 3 - نقل و انتقالات</title>
+    <link rel="stylesheet" href="header.min.css">
+    <link rel="stylesheet" href="transfer.min.css">
+    <link rel="stylesheet" href="footer.min.css">
+    <link rel="shortcut icon" href="img/fav-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body id="scroll-top">
+    <!--Header-->
+    <header>
+        <div class="header-items">
+            <div class="sm-menu pt-4 d-lg-none">
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+                <nav class="mobile-menu pt-4 pe-4 pb-2">
+                    <ul>
+                        <li class="list-unstyled"><a href="index.html" class="pt-0 pb-0 mt-0 ">صفحه اصلی</a></li>
+                        <li class="list-unstyled"><a href="#" class=" pt-1 pb-0 mt-0 ">اخبار</a></li>
+                        <li class="list-unstyled"><a href="#" class=" pt-1 pb-0 mt-0 ">جدول لیگ برتر</a></li>
+                        <li class="list-unstyled"><a href="#" class=" pt-1 pb-0  mt-0 ">جام حذفی</a></li>
+                        <li class="list-unstyled"><a href="#" class=" pt-1 pb-0 mt-0 ">روزنامه</a></li>
+                        <li class="list-unstyled"> <a href="transfer.html" class="second-mark-item pt-1 pb-0 mt-0 ">نقل
+                                و انتقالات</a></li>
+                        <li class="list-unstyled"> <a href="#" class=" pt-1 pb-0 mt-0 ">ویدیو</a></li>
+                        <li class="list-unstyled"><a href="#" class=" pt-1 pb-0 mt-0 ">نتایج زنده <i
+                                    class="fas fa-circle"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="d-none d-lg-block">
+                <a href="index.html">صفحه اصلی</a>
+                <a href="#">اخبار</a>
+                <a href="#">جدول لیگ برتر</a>
+                <a href="#">جام حذفی</a>
+                <a href="#">روزنامه</a>
+                <a href="transfer.html" class="mark-item">نقل و انتقالات</a>
+                <a href="#">ویدیو</a>
+                <a href="#">نتایج زنده <i class="fas fa-circle"></i></a>
+            </nav>
+            <div class="logo"><img src="img/vrz3-logo.svg" alt="logo"></div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner slideshow">
+                <div class="carousel-item active">
+                    <img src="img/bg7.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide-8.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev btn-right-size" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btn-left-size" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="slideInfo">
+            <h1 class="main-name">ورزش سه</h1>
+            <p class="sub-name">نقل و انتقالات</p>
+        </div>
+    </header>
+    <!--impoer & Export players-->
+    <section class="players position-relative">
+        <div class="dropdowns-row">
+            <div class="dropdown d-inline-block">
+                <button class="btn-style dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    نقل و انتقالات لیگ برتر ایران
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">آلومینیوم اراک</a></li>
+                    <li><a class="dropdown-item third-mark-item" href="#">استقلال</a></li>
+                    <li><a class="dropdown-item" href="#">پرسپولیس</a></li>
+                    <li><a class="dropdown-item" href="#">پیکان</a></li>
+                    <li><a class="dropdown-item" href="#">تراکتور</a></li>
+                    <li><a class="dropdown-item" href="#">ذوب آهن</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">سایر تیم ها</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown d-inline-block">
+                <button class="btn-style dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    نقل و انتقالات اروپا
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">آس رم</a></li>
+                    <li><a class="dropdown-item" href="#">آث میلان</a></li>
+                    <li><a class="dropdown-item" href="#">آرسنال</a></li>
+                    <li><a class="dropdown-item" href="#">اتلتیکو مادرید</a></li>
+                    <li><a class="dropdown-item" href="#">بارسلونا</a></li>
+                    <li><a class="dropdown-item" href="#">بایرن مونیخ</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">سایر تیم ها</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="title d-flex justify-content-between align-items-start container-size mt-5 position-relative">
+            <div class="title-sign import-title-sign"></div>
+            <div class="import-title">
+                <h2 class="import">بازیکنان ورودی</h2>
+            </div>
+            <div class="team-name"><img src="img/team-esteghlal.png"></div>
+            <div class="title-sign export-title-sign"></div>
+            <div class="import-title">
+                <h2 class="export">بازیکنان خروجی</h2>
+            </div>
+        </div>
+        <div class="players-row container-size">
+            <div class="players-items">
+                <!--import players-->
+                <div class="player-content">
+                    <div class="player-img"><img src="img/player1-1.jpg">
+                        <div class="img-anime right-anime"></div>
+                    </div>
+                    <div class="player-info right-info">
+                        <h3>حامد احمدی فر </h3>
+                        <div class="player-text">
+                            <p class="text">وضعیت انتقال: قطعی</p>
+                            <p>انتقال: از سپاهان به استقلال</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-content">
+                    <div class="player-img"><img src="img/player2-1.jpg">
+                        <div class="img-anime right-anime"></div>
+                    </div>
+                    <div class="player-info right-info">
+                        <h3> رضا میرزایی </h3>
+                        <div class="player-text">
+                            <p class="text">وضعیت انتقال: قطعی</p>
+                            <p>انتقال: از پرسپولیس به استقلال</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-content">
+                    <div class="player-img"><img src="img/player3-1.jpg">
+                        <div class="img-anime right-anime"></div>
+                    </div>
+                    <div class="player-info right-info">
+                        <h3>سامان فلاح </h3>
+                        <div class="player-text">
+                            <p class="text">وضعیت انتقال: قطعی</p>
+                            <p>انتقال: از پیکان به استقلال</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-content">
+                    <div class="player-img"><img src="img/player4-1.jpg">
+                        <div class="img-anime right-anime"></div>
+                    </div>
+                    <div class="player-info right-info">
+                        <h3> سیاوش یزدانی </i></h3>
+                        <div class="player-text">
+                            <p class="text">وضعیت انتقال: قطعی</p>
+                            <p>انتقال: از فولاد به استقلال</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-img"><img src="img/soccer2.jpg"></div>
+            <!--export players-->
+            <div class="players-items">
+                <div class="player-content">
+                    <div class="player-info left-info ">
+                        <h3 class="player-name ">رودی ژستد</h3>
+                        <div class="player-text">
+                            <p class="text">وضعیت انتقال: قطعی</p>
+                            <p>انتقال: از استقلال به پیکان</p>
+                        </div>
+                    </div>
+                    <div class="player-img"><img src="img/player5-1.jpg">
+                        <div class="img-anime left-anime"></div>
+                    </div>
+                </div>
+                <div class="player-content">
+                    <div class="player-info left-info ">
+                        <h3 class="player-name "> زکریا مرادی</h3>
+                        <div class="player-text">
+                            <p class="text">وضعیت انتقال: قطعی</p>
+                            <p>انتقال: از استقلال به ملوان</p>
+                        </div>
+                    </div>
+                    <div class="player-img"><img src="img/player8-1.jpg">
+                        <div class="img-anime left-anime"></div>
+                    </div>
+                </div>
+                <div class="player-content">
+                    <div class="player-info left-info ">
+                        <h3 class="player-name "> احسان مقیمی</h3>
+                        <div class="player-text">
+                            <p class="text">وضعیت انتقال: قطعی</p>
+                            <p>انتقال: از استقلال به پرسپولیس</p>
+                        </div>
+                    </div>
+                    <div class="player-img"><img src="img/player7-1.jpg">
+                        <div class="img-anime left-anime"></div>
+                    </div>
+                </div>
+                <div class="player-content">
+                    <div class="player-info left-info ">
+                        <h3 class="player-name "> امیر حسینی</h3>
+                        <div class="player-text">
+                            <p class="text">وضعیت انتقال: قطعی</p>
+                            <p>انتقال: از استقلال به سپاهان</p>
+                        </div>
+                    </div>
+                    <div class="player-img"><img src="img/player6-1.jpg">
+                        <div class="img-anime left-anime"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="link text-center mb-5">
+            <button class="main-btn "> <span>اطلاعات بیشتر</span></button>
+        </div>
+        <!--scroll top-->
+        <a href="#scroll-top">
+            <div class="scroll-top">
+                <i class="fas fa-caret-up"></i>
+            </div>
+        </a>
+    </section>
+
+    <!--footer-->
+    <footer">
+        <div class="footer">
+            <div class="row footer-row ">
+                <div class="footer-items col-6 col-md-4 col-xl-2">
+                    <h3>راهنما</h3>
+                    <ul>
+                        <li><a href="#"></a>ارتباط با ما </li>
+                        <li><a href="#"></a>تبلیغات</li>
+                        <li><a href="#"></a>فرصت های شغلی</li>
+                        <li><a href="#"></a>قوانین و مقررات</li>
+                        <li><a href="#"></a> درباره ما</li>
+                    </ul>
+                </div>
+                <div class="footer-items col-6 col-md-4 col-xl-2">
+                    <h3>سرویس ها</h3>
+                    <ul>
+                        <li><a href="#"></a>اخبار ورزشی</li>
+                        <li><a href="#"></a>اخبار زنده</li>
+                        <li><a href="#"></a>جدول لیگ ها</li>
+                        <li><a href="#"></a>ویدئو</li>
+                        <li><a href="#"></a>روزنامه</li>
+                        <li><a href="#"></a>نتایج زنده</li>
+                        <li><a href="#"></a>آنتن</li>
+                        <li><a href="#"></a>پیش بینی</li>
+                        <li><a href="#"></a>لنز</li>
+
+                    </ul>
+                </div>
+                <div class="footer-items col-6 col-md-4 col-xl-2">
+                    <h3>تیم های داخلی</h3>
+                    <ul>
+                        <li><a href="#"></a>استقلال</li>
+                        <li><a href="#"></a>پرسپولیس</li>
+                        <li><a href="#"></a>تراکتور</li>
+                        <li><a href="#"></a>صنعت نفت آبادان</li>
+                        <li><a href="#"></a>فجر سپاسی</li>
+                        <li><a href="#"></a>فولاد</li>
+                        <li><a href="#"></a>نساجی مازندران</li>
+                    </ul>
+                </div>
+                <div class="footer-items col-6 col-md-4 col-xl-2">
+                    <h3>تیم های خارجی</h3>
+                    <ul>
+                        <li><a href="#"></a>آث میلان</li>
+                        <li><a href="#"></a>اینتر میلان</li>
+                        <li><a href="#"></a>بارسلونا</li>
+                        <li><a href="#"></a>پاری سن ژرمن</li>
+                        <li><a href="#"></a>چلسی</li>
+                        <li><a href="#"></a>رئال مادرید</li>
+                        <li><a href="#"></a>لیورپول</li>
+                        <li><a href="#"></a>منچستریونایتد</li>
+                        <li><a href="#"></a>یوونتوس</li>
+
+                    </ul>
+                </div>
+                <div class="footer-items col-6 col-md-4 col-xl-2">
+                    <h3>رقابت ها</h3>
+                    <ul>
+                        <li><a href="#"></a>جدول لیگ برتر ایران</li>
+                        <li><a href="#"></a>نمودار جام حذفی ایران</li>
+                        <li><a href="#"></a>لیگ قهرمان اروپا</li>
+                        <li><a href="#"></a>لیگ قهرمان آسیا</li>
+                        <li><a href="#"></a>لیگ اروپا</li>
+                        <li><a href="#"></a>جدول لیگ برتر انگلیس</li>
+                        <li><a href="#"></a>جدول لالیگا اسپانیا</li>
+                        <li><a href="#"></a>جدول بوندسلیگا آلمان</li>
+                        <li><a href="#"></a>جدول سری آ ایتالیا</li>
+
+                    </ul>
+                </div>
+                <div class="footer-items col-6 col-md-4 col-xl-2">
+                    <h3>سایر</h3>
+                    <ul>
+                        <li><a href="#"></a>رنکینگ فیفا</li>
+                        <li><a href="#"></a>نقل و انتقالات اروپا</li>
+                        <li><a href="#"></a>نقل و انتقالات لیگ برتر ایران</li>
+                        <li><a href="#"></a>جدول لیگ برتر فوتسال</li>
+                        <li><a href="#"></a>جدول لیگ برتر والیبال</li>
+                        <li><a href="#"></a>جدول لیگ برتر بسکتبال</li>
+                        <li><a href="#"></a>بایرلورکوزن</li>
+                        <li><a href="#"></a>پورتو</li>
+                        <li><a href="#"></a>فاینورد</li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--footer buttom-->
+            <div class="footer-buttom-row">
+                <div class="footer-icons">
+                    <img src="img/vrz3-logo.svg" class="footer-logo">
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-note">
+                    <span>تمام حقوق مادی و معنوی این سایت متعلق به ورزش سه می باشد. شما می توانید از سایت ورزش سه در
+                        صورت پذیرش موافقت نامه کاربری استفاده نمایید.</span>
+                </div>
+
+            </div>
+        </div>
+        </footer>
+        <script src="app.js"></script>
+        <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

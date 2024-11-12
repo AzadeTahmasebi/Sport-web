@@ -1,0 +1,405 @@
+@import "base";
+@import "components";
+
+
+/*-----------Responsive------------*/
+
+@media screen and (min-width:480px) {
+
+    section.volleyball-news {
+
+        .volleyball-row {
+            .volleyballCard {
+                width: 80%;
+                margin: 0 auto 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:500px) {
+    section.sportsLink {
+        .sport-card {
+            height: 600px !important;
+        }
+    }
+
+    section.newsCard {
+        .newsCard-row {
+            .card {
+                width: 80% !important;
+                margin: 0 auto 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:560px) {
+    section.iranianLeauge {
+
+        .teams-ranking {
+            @include positionChanger(90%, 5%);
+        }
+    }
+
+    section.best-players {
+        .heading-space {
+            margin-top: 400px;
+        }
+    }
+
+    section.world-cup {
+        tr {
+            font-size: 15px !important;
+        }
+    }
+
+    section.volleyball-news {
+        .volleyball-row {
+            .volleyballCard {
+                height: 550px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) {
+    section.sportsLink {
+        .sport-card {
+            height: 250px !important;
+
+            .card {
+                width: 32% !important;
+                transform: skew(-10deg);
+            }
+        }
+    }
+}
+
+@media screen and (min-width:620px) {
+    section.newsCard {
+        .newsCard-row {
+            .card {
+                width: 60% !important;
+            }
+        }
+    }
+
+    section.best-players {
+        height: 980px;
+
+        .main-row {
+            height: 60vh !important;
+
+            .player-info {
+                height: 60vh !important;
+
+                .player-name {
+                    font-size: 25px !important;
+                }
+
+                .team-info {
+                    font-size: 14px !important;
+                    padding: 20px 0 !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                }
+            }
+
+            .player-ranking {
+                font-size: 40px !important;
+            }
+        }
+    }
+
+    .play-video {
+        width: 70% !important;
+    }
+}
+
+@media screen and (min-width:670px) {
+    section.sportsLink {
+        .sport-card {
+            height: 300px !important;
+        }
+    }
+
+    section.foreign-leagues {
+        height: 1450px;
+    }
+
+    .world-cup-table {
+        width: 80% !important;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:720px) {
+    section.newsCard {
+
+        .card {
+            width: 60% !important;
+        }
+    }
+
+    section.iranianLeauge {
+        height: 1600px;
+
+        .teams-ranking {
+            @include positionChanger(87%, 5%);
+        }
+    }
+
+    section.videos {
+        height: 1300px;
+    }
+
+    section.volleyball-news {
+        .volleyball-row {
+            .volleyballCard {
+                width: 60% !important;
+                height: 550px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:820px) {
+    section.sportsLink {
+        .sport-card {
+            height: 350px !important;
+        }
+
+        .right-btn {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+        }
+    }
+
+    section.newsCard {
+        .newsCard-row {
+            .card {
+                width: 32% !important;
+
+                .cardInfo {
+                    padding: 7px;
+
+                    span {
+                        font-size: 9px !important;
+                    }
+
+                    .text {
+                        font-size: 10px !important;
+                        padding-bottom: 5px;
+
+                    }
+
+                    h3 {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    section.best-players {
+        height: 1100px;
+
+        .main-row {
+            height: 70vh !important;
+
+            .player-info {
+                height: 70vh !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .slideshow {
+        height: 500px;
+    }
+
+    section.sportsLink {
+        .sport-card {
+            height: 400px !important;
+        }
+    }
+
+    section.newsCard {
+        .newsCard-row {
+            .card {
+                .cardInfo {
+                    padding: 10px;
+
+                    span {
+                        font-size: 10px !important;
+                    }
+
+                    .text {
+                        font-size: 13px !important;
+                        padding-bottom: 5px;
+
+                    }
+
+                    h3 {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    section.iranianLeauge {
+        height: 900px;
+
+        .teams-ranking {
+            @include positionChanger(80%, 5%);
+        }
+    }
+
+    section.best-players {
+        height:800px;
+
+        .best-players-row {
+            @include flexlayout(space-between);
+
+            .best-scorers {
+                transform: rotate(-90deg);
+                top: 10% !important;
+                right: -2% !important;
+            }
+
+            .best-passers {
+                transform: rotate(-90deg);
+                top: 10% !important;
+                right: 97% !important;
+            }
+        }
+
+        .main-row {
+            width: 45%;
+            height: 60vh;
+
+            .player-info {
+                height: 60vh;
+            }
+        }
+    }
+
+    section.foreign-leagues {
+        height: 750px;
+    }
+
+    .world-cup-table {
+        width: 48% !important;
+        margin: 0;
+    }
+
+    section.videos {
+        height: 800px !important;
+
+        .play-video {
+            width: 50% !important;
+            margin: 0;
+            position: absolute;
+            top: 25%;
+            right: 2%;
+        }
+
+        .more-videos {
+            width: 50%;
+            position: absolute;
+            top: 5%;
+            left: 2%;
+        }
+    }
+
+    section.volleyball-news {
+        .volleyball-row {
+            .volleyballCard {
+                width: 32% !important;
+                height: 550px;
+                border: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1150px) {
+    section.sportsLink {
+        .sport-card {
+            height: 450px !important;
+        }
+    }
+
+    section.newsCard {
+        .newsCard-row {
+            .card {
+                .cardInfo {
+                    padding: 30px 20px;
+
+                    span {
+                        font-size: 11px !important;
+                    }
+
+                    .text {
+                        font-size: 14px !important;
+                        padding-bottom: 20px;
+
+                    }
+
+                    h3 {
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    section.lastNews {
+        .lastNews-row {
+            .player {
+                width: 48%;
+            }
+
+            .ball-img {
+                @include positionChanger(15%, 40%);
+            }
+
+            .lastNews-info {
+                margin: 0;
+
+                .links {
+                    padding: 30px 20px !important;
+                }
+
+                .lastNews-link {
+                    font-size: 16px !important;
+                }
+
+                .lastNews-items {
+                    padding-right: 45px;
+
+                    a {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    section.iranianLeauge {
+        height: 900px;
+
+        .teams-ranking {
+            @include positionChanger(75%, 5%);
+        }
+    }
+}

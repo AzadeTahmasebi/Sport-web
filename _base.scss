@@ -1,0 +1,27 @@
+// Variables:
+$color-primary: #5551C4;
+$color-secondary: #242F9B;
+$color-third: #8175EE;
+$color-fourth: #AB9CFF;
+$color-fifth: #eec64e;
+$color-base: #242635;
+$color-dark: black;
+$color-light: white;
+
+// Mixins:
+@mixin flexlayout ($justifyValue) {
+    display: flex;
+    justify-content: $justifyValue;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+@mixin positionChanger ($topValue, $rightValue) {
+    position: absolute;
+    top: $topValue ;
+    right: $rightValue;
+}
+
+@mixin fontChanger ($fontSize) {
+    font-size: $fontSize;
+}

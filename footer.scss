@@ -1,0 +1,108 @@
+@import "base";
+@import "components";
+
+//footer:
+.footer {
+    background-color: $color-base;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .footer-row {
+        padding: 70px 0 30px;
+        border-bottom: 1px solid rgb(156, 155, 155);
+
+        .footer-items {
+            color: rgb(156, 155, 155);
+            padding: 0px 30px 20px 0;
+
+            h3 {
+                @include fontChanger(18px);
+                color: $color-light;
+            }
+
+            ul {
+                padding-right: 0;
+                padding-top: 20px;
+
+                li {
+                    list-style-type: none;
+                    padding: 5px;
+                    @include fontChanger(13px);
+                    cursor: pointer;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $color-fourth;
+                        transition: .5s;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-buttom-row {
+        padding: 30px;
+
+        .footer-icons {
+            @include flexlayout(space-between);
+            padding-bottom: 20px;
+
+            .footer-logo {
+                width: 150px;
+            }
+
+            .social-media {
+                padding-top: 10px;
+
+                i {
+                    @include fontChanger(22px);
+                }
+
+                a {
+                    color: rgb(156, 155, 155);
+                    padding-left: 5px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $color-fourth;
+                        transition: .5s;
+                        animation: shake 1s infinite linear;
+
+                        @keyframes shake {
+                            10% {
+                                transform: rotate(15deg);
+                            }
+
+                            20% {
+                                transform: rotate(-15deg);
+                            }
+
+                            30% {
+                                transform: rotate(15deg);
+                            }
+
+                            40% {
+                                transform: rotate(-15deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-note {
+            color: rgb(156, 155, 155);
+            @include fontChanger(11px);
+        }
+    }
+}
+
+//-----Responsive---------
+@media screen and (min-width:800px) {
+    .footer-note {
+        font-size: 13px !important;
+        text-align: center;
+    }
+}
